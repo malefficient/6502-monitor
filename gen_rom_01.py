@@ -1,5 +1,6 @@
-#Generate a 32Kb NOPSled of ROM
+# Generate a 32Kb NOPSled of ROM
 # to program: minipro -p AT28C256 -w rom.bin 
+# Ben-Eater follow a long offset link: https://www.youtube.com/watch?v=yl8vPW5hydQ&t=1140s
 rom = bytearray( [0xea] * 32768)
 
 #Fill A register with immediate 0x42
